@@ -1,0 +1,18 @@
+// Place all the styles related to the Static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.content-about {
+  height: 80vh;  
+  background-image: linear-gradient(to top, #30cfd0 0%, #f5f7fa 100%);
+  text-align: center;
+  font-style: italic;
+}
+
+.content-about h1 {
+  padding-top: 30px;
+}
+
+.img-about {
+  height: 50vh;
+}

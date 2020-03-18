@@ -13,3 +13,53 @@
  *= require_tree .
  *= require_self
  */
+
+body, header, footer, h1, h4, .menu {
+  margin: 0;
+}
+
+header {
+  height: 10vh;
+  background-color: aqua;
+}
+
+header h1 {
+  padding-top: 10px;
+  padding-left: 10px;
+  color: #013220;
+}
+
+.menu {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  list-style-type: none;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.menu li {
+  display: inline;
+  padding-right: 15px;
+}
+
+
+.menu li a:hover {
+  color: #edff21;
+}
+
+.content {
+  height: 80vh;
+}
+
+footer {
+  height: 10vh;
+  background-color: aqua;
+  display: flex;
+}
+
+.footer-text {
+  margin: auto;
+  color: #013220;
+}
+
