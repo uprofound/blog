@@ -3,6 +3,7 @@ class Post < ApplicationRecord
   has_many :comments, as: :commentable
 # has_many :users, through: :comments
   has_many :commentators, through: :comments, source: :user
+  has_many :seos, as: :seoable
 
   validates :title, presence: true
   validates :title, uniqueness: true
