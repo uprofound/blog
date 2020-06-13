@@ -9,7 +9,8 @@ class Post < ApplicationRecord
   validates :title, uniqueness: true
   validates :title, length: {minimum: 4, maximum: 64}
 
-  def self.from_moderators
-    Post.where(user_id: User.where(moderator: true))
-  end
+  scope :written_by_moderators, -> {joins(:user).where(users: {moderator: true})}
+# def self.from_moderators
+#   Post.where(user_id: User.where(moderator: true))
+# end
 end
