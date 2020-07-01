@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :posts
 # resources :posts, only: [:index, :show]
 # resources :posts, except: [:destroy]
+  resources :users
   get 'static_pages/about'
   root 'home#index'
   get '/home(/:hello)', to: 'home#index'
