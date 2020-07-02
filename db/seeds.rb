@@ -24,13 +24,13 @@ creators = User.where(creator: true)
 hash_posts = 20.times.map do
   {
     title: FFaker::HipsterIpsum.paragraph[4...64],
-    body: FFaker::HipsterIpsum.paragraphs,
+    body: FFaker::HipsterIpsum.paragraph,
     user: creators.sample
   }
 end
 posts = Post.create! hash_posts
 
-hash_comments = 200.times.map do
+hash_comments = 400.times.map do
   commentable = ((rand(2) == 1) ? posts : users).sample
   {
     body: FFaker::HipsterIpsum.paragraph[1...128],

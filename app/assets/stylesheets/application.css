@@ -43,13 +43,26 @@ header h1 {
   padding-right: 15px;
 }
 
-
-.menu li a:hover {
+/*.menu li a:hover {
   color: #edff21;
-}
+}*/
 
 .content {
   height: 80vh;
+  background-image: linear-gradient(to top, #f5f7fa 0%, #30cfd0 100%);
+  text-align: center;
+}
+
+a:hover {
+  color: #ff1493; /* DeepPink */
+}
+
+.td-text-left {
+  text-align: left;
+}
+
+.td-text-justify {
+  text-align: justify;
 }
 
 footer {
@@ -60,6 +73,5 @@ footer {
 
 .footer-text {
   margin: auto;
-  color: #013220;
+  /*color: #013220;*/
 }
-

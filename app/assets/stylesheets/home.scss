@@ -2,13 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-.content-main {
-  height: 80vh;
-  background-image: linear-gradient(to top, #f5f7fa 0%, #30cfd0 100%);
-  text-align: center;
-}
-
-.content-main h1 {
+h1 {
   padding-top: 30px;
 }
 
+.img-home {
+  height: 50vh;
+}
