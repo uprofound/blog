@@ -1,7 +1,7 @@
 tr
-  td class="td-text-left" = post.title
-  td class="td-text-justify" = post.body
-  td class="td-text-left" = post.user.name
+  td class="ta-left" = post.title
+  td class="ta-justify" = post.body
+  td class="ta-left" = post.user.name
   td = post.visible
   td = link_to 'Show', post
   td = link_to 'Edit', edit_post_path(post)

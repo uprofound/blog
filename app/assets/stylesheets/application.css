@@ -57,11 +57,11 @@ a:hover {
   color: #ff1493; /* DeepPink */
 }
 
-.td-text-left {
+.ta-left {
   text-align: left;
 }
 
-.td-text-justify {
+.ta-justify {
   text-align: justify;
 }
 

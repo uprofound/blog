@@ -16,10 +16,14 @@ p
 p
   strong Comments:
   table
-    - @post.comments.order(:created_at).each do |comment|
+    - @post_comments.each do |comment|
       tr
-        td class="td-text-left": b = comment.user.name
-        td class="td-text-justify" = comment.body
+        td class="ta-left": b = comment.user.name
+        td class="ta-justify" = comment.body
+
+/ p class="ta-left" = paginate @post_comments не срабатывает
+div class="ta-left"
+  = paginate @post_comments 
 
 => link_to 'Edit', edit_post_path(@post)
 '|
