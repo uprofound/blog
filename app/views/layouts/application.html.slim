@@ -8,13 +8,8 @@ html
     = stylesheet_link_tag 'application', media: 'all'
     = javascript_pack_tag 'application'
   body
-    header
-      h1 RoR-travel
-      ul class="menu"
-        li: a[href="/"] Home
-        li: a[href="/posts"] Posts
-        li: a[href="/users"] Users
-        li: a[href="/about"] About
+    /! = render 'shared/header'
+    = render 'shared/header'
     section class="content"
       = yield
     footer
