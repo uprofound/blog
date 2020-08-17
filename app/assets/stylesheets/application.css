@@ -14,7 +14,7 @@
  *= require_self
  */
 
-body, header, footer, h1, h4, .menu {
+body, header, footer, h1, h2, h4, .menu {
   margin: 0;
 }
 
@@ -51,6 +51,14 @@ header h1 {
   height: 80vh;
   background-image: linear-gradient(to top, #f5f7fa 0%, #30cfd0 100%);
   text-align: center;
+}
+
+h1 {
+  padding-top: 30px;
+}
+
+h2 {
+  padding-top: 20px;
 }
 
 a:hover {

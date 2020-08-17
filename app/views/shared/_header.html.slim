@@ -1,8 +1,18 @@
 header
-  ul
+  h1
+    = t('label.topic')
+  ul class="menu"
     - if user_signed_in?
       li
         span = t('label.hello') % current_user.name
+      li
+        = link_to t('label.home'), href="/"
+      li
+        = link_to t('label.posts'), href="/posts"
+      li
+        = link_to t('label.users'), href="/users"
+      li
+        = link_to t('label.about'), href="/about"
       li
         = link_to t('label.log_out'), destroy_user_session_path, method: :delete
     - else

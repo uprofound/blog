@@ -1,8 +1,14 @@
 ru:
   label:
+    topic: RoR-путешествие
     log_in: Вход
     log_out: Выход
-    hello: Привет, %s
+    home: Главная
+    posts: Сообщения
+    users: Пользователи
+    about: Обо мне
+    log_out: Выход
+    hello: Привет, %s!
     registration: Регистрация
   activerecord:
     errors:
