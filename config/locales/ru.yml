@@ -7,6 +7,7 @@ ru:
     posts: Сообщения
     users: Пользователи
     about: Обо мне
+    profile: Профиль
     log_out: Выход
     hello: Привет, %s!
     registration: Регистрация
