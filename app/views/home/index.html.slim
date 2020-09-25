@@ -1,6 +1,7 @@
 h1 Welcome to my Blog
-p.alert.alert-primary Wow, you visit that page #{session[:times_here]} times
+p.alert.alert-success Wow, you visit that page #{session[:times_here]} times
 img class="img-home" src="https://images.unsplash.com/photo-1503264116251-35a269479413?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="[space-image]"
-= render "components/page/page" do
-  p.alert.alert-success Hello from our first component!
+
+/!= render "components/page/page" do
+/!  p.alert.alert-success Hello from our first component!
 
